@@ -1,0 +1,31 @@
+.product-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+  }
+  .product-item {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .product-item li {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+  }
+  .product-item li::after {
+    content: attr();
+    font-weight: bold;
+  }
+  .product-item li::after {
+    content: ' Rs.';
+  }
+  .product-item li:hover {
+    background-color: #F5F5F5;
+    cursor: pointer;
+  }
+  
